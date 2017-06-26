@@ -54,8 +54,8 @@ h1 {
     font-size: 3em;
     font-family: "Ramabhadra", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.main-image img {
-    padding: 10px 20px 0 0;
+.main-image {
+    padding: 100px 20px 0 0;
 }
 p {
     font-size: 1.5em;
