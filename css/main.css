@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 body {
+    max-width: 950px;
     margin: 15px auto;
 }
 h1 {
