@@ -47,14 +47,11 @@ table {
 	border-spacing: 0;
 }
 body {
-    margin: 25px 25px 25px 25px;
+    margin: 10px 10px 10px 10px;
 }
 h1 {
     font-size: 3em;
     font-family: "Ramabhadra", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-.main-image {
-    padding: 5px 100px 0 0;
 }
 p {
     font-size: 1.5em;
