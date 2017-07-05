@@ -47,7 +47,8 @@ table {
 	border-spacing: 0;
 }
 body {
-    margin: 10px 10px 10px 10px;
+    margin: 25px 25px 25px 25px;
+    width: auto
 }
 h1 {
     font-size: 3em;
