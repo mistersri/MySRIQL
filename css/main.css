@@ -29,6 +29,7 @@ ul {
 li {
     font-size: 1.2em;
     font-family: 'Raleway', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    line-height: 1.4em;
     color: #333;
     padding: 0px 0px 5px 0px;
 }
