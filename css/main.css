@@ -39,3 +39,9 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+p.minor {
+    font-size: 0.5em;
+    font-family: 'Raleway:300i', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    line-height: 1.4em;
+    color: #333;
+}
