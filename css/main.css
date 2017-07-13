@@ -52,9 +52,9 @@ avatar {
     height: 10rem;
     float: left;
     margin-right: 1.5rem;
-    margin-top:-3rem;
+    margin-top: -3rem;
     width: 10rem;
-    border-radius:10rem;
+    border-radius: 10rem;
     margin-bottom: 2rem;
 }
 @media screen and (max-width: 720px) {
