@@ -49,11 +49,11 @@ li {
     padding: 0;
 }
 avatar {
-    height: 10rem;
+    height: 20rem;
     float: left;
     margin-right: 1.5rem;
     margin-top: -3rem;
-    width: 10rem;
+    width: 20rem;
     border-radius: 10rem;
     margin-bottom: 2rem;
 }
