@@ -48,7 +48,7 @@ li {
     margin: 0 0 1.2rem 0;
     padding: 0;
 }
-avatar {
+.avatar {
     height: 10rem;
     float: left;
     margin-right: 1.5rem;
@@ -61,7 +61,7 @@ avatar {
     .container {
         padding-top: 2rem;
     }
-    avatar {
+    .avatar {
         float: none;
         margin: 0;
     }
