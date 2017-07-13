@@ -67,7 +67,14 @@ li {
     }
 }
 nav {
+    background: none;
     max-width: 50rem;
     margin: 0 auto;
-    padding: 4rem 1rem 2rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle; }
+    nav > a:hover {
+      background: none;
+      color: #0000EE; }
 }
+
