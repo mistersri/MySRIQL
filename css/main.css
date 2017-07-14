@@ -66,6 +66,12 @@ li {
         margin: 0;
     }
 }
+.fa-icon {
+  display: block;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1; }
 nav {
     background: none;
     max-width: 50rem;
