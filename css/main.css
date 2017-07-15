@@ -66,9 +66,27 @@ li {
         margin: 0;
     }
 }
-.fa {
+.fa-icon {
   display: block;
-  color: #bfbfbf;
-  .fa > a:hover {
-      background: none;
-      color: #0088cc; }
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1; }
+
+.fa-camera-retro:before {
+  content: "\f083"; }
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-instagram:before {
+  content: "\f16d"; }
+
+.fa-spotify:before {
+  content: "\f1bc"; }
+
+.fa-github:before {
+  content: "\f09b"; }
+
+.fa-email:before {
+  content: "\f003"; }
