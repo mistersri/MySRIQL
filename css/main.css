@@ -70,6 +70,6 @@ li {
   display: block;
   color: #bfbfbf;
   text-decoration: none;
-  a:hover {
+  .fa > a:hover {
       background-color: #0000EE; }
 }
