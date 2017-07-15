@@ -71,5 +71,5 @@ li {
   color: #bfbfbf;
   text-decoration: none;
   .fa > a:hover {
-      background-color: #0000EE; }
-}
+      background: none;
+      color: #0088cc; }
