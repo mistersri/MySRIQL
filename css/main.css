@@ -69,7 +69,6 @@ li {
 .fa {
   display: block;
   color: #bfbfbf;
-  text-decoration: none;
   .fa > a:hover {
       background: none;
       color: #0088cc; }
