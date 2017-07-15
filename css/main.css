@@ -68,8 +68,9 @@ li {
 }
 .fa {
   display: block;
-  font-size: 1.2rem;
-  line-height: 1; }
+  color: #bfbfbf;
+  hover {
+    color: #OOO0EE; }
 }
 nav {
     background: none;
