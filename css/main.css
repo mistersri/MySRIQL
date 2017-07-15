@@ -76,6 +76,7 @@ nav {
   nav > a {
     background: none;
     text-decoration: none;
+    text-align: right;
     border-radius: 3px;
     color: #bfbdbd;
     display: inline-block;
