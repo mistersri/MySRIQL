@@ -69,7 +69,7 @@ li {
 .fa {
   display: block;
   color: #bfbfbf;
-  a:hover {
+  hover {
     color: #0000EE; }
 }
 nav {
