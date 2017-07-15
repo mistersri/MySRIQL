@@ -26,7 +26,6 @@ body {
 h1, h2 {
     color: #333;
     font-family: 'Raleway', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-weight: 600
     line-height: 1.1;
     margin: 1.2rem 0;
     padding: 0;
@@ -44,8 +43,7 @@ p {
     padding: 0;
 }
 p.italic {
-    font-family: 'Raleway', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-weight: 400i
+    font-size: 0.8rem;
 }
 ul {
     list-style-type: circle;
