@@ -71,12 +71,12 @@ li {
 }
 nav {
   display: block;
+  text-align: right;
   margin-left: -3px;
   margin-top: 0.5rem; }
   nav > a {
     background: none;
     text-decoration: none;
-    text-align: right;
     border-radius: 3px;
     color: #bfbdbd;
     display: inline-block;
