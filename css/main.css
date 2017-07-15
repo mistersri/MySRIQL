@@ -76,7 +76,7 @@ nav {
   nav > a {
     background: none;
     border-radius: 3px;
-    color: #bbbbbb;
+    color: #bfbdbd;
     display: inline-block;
     margin-right: 0.1rem;
     padding: 5px;
@@ -84,13 +84,13 @@ nav {
     vertical-align: middle; }
     nav > a:hover {
       background: none;
-      color: #0088cc; }
+      color: #1d77ff; }
 
 .fa-icon {
   display: block;
   font-family: "FontAwesome";
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1; }
 
 .fa-linkedin:before {
