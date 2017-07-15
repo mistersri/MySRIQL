@@ -17,6 +17,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    body > p.italic {
+      font-size: 0.8rem
 }
 .container {
     max-width: 50rem;
@@ -41,9 +43,6 @@ p {
     clear: both;
     margin: 1.2rem 0;
     padding: 0;
-}
-p.italic {
-    font-size: 0.8rem;
 }
 ul {
     list-style-type: circle;
