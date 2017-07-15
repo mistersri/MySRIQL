@@ -78,9 +78,5 @@ nav {
     margin: 0 auto;
     display: inline-block;
     position: relative;
-    vertical-align: middle; }
-    nav > a:hover {
-      background: none;
-      color: #0000EE; }
 }
 
