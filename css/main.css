@@ -68,6 +68,9 @@ li {
         float: none;
         margin: 0;
     }
+    .fa-icon {
+        font-size: 3rem;
+    }
 }
 nav {
   display: block;
