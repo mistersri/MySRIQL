@@ -69,15 +69,7 @@ li {
 .fa {
   display: block;
   color: #bfbfbf;
+  text-decoration: none;
   a:hover {
-      text-decoration: none;
       background-color: #0000EE; }
 }
-nav {
-    background: none;
-    max-width: 50rem;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-}
-
