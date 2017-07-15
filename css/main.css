@@ -42,6 +42,9 @@ p {
     margin: 1.2rem 0;
     padding: 0;
 }
+p.minor {
+    font-size: 0.9rem;
+}
 ul {
     list-style-type: circle;
     margin: 1.2rem 0;
