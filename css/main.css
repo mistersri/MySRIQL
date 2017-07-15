@@ -69,6 +69,23 @@ li {
         margin: 0;
     }
 }
+nav {
+  display: block;
+  margin-left: -3px;
+  margin-top: 0.5rem; }
+  nav > a {
+    background: none;
+    border-radius: 3px;
+    color: #bbbbbb;
+    display: inline-block;
+    margin-right: 0.1rem;
+    padding: 5px;
+    position: relative;
+    vertical-align: middle; }
+    nav > a:hover {
+      background: none;
+      color: #0088cc; }
+
 .fa-icon {
   display: block;
   font-family: "FontAwesome";
