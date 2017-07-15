@@ -69,8 +69,9 @@ li {
 .fa {
   display: block;
   color: #bfbfbf;
-  hover {
-    color: #0000EE; }
+  a:hover {
+      text-decoration: none;
+      background-color: #0000EE; }
 }
 nav {
     background: none;
