@@ -18,6 +18,15 @@ body {
     margin: 0;
     padding: 0;
 }
+body {
+	color: #272727;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #272727;
+		color: #ffffff;
+	}
+}
 .container {
     max-width: 50rem;
     margin: 0 auto;
