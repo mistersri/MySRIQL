@@ -77,6 +77,9 @@ li {
 	background-color: #272727;
 	color: #ffffff;
 	}
+     h1, h2 {
+	color: #ffffff
+	}
 }
 nav {
   display: block;
