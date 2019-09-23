@@ -80,6 +80,9 @@ li {
      h1, h2 {
 	color: #ffffff
 	}
+     a {
+        color: #1e90ff;
+	}
 }
 nav {
   display: block;
