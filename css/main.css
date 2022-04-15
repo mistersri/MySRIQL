@@ -55,6 +55,9 @@ li {
     margin: 0 0 1.2rem 0;
     padding: 0;
 }
+a:link {
+  color: #abd7eb;
+}
 .avatar {
     height: 10rem;
     float: left;
