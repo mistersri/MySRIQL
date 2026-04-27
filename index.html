@@ -22,12 +22,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 4rem 2rem;
+      padding: 3rem 2rem;
     }
 
     @media (max-width: 520px) {
       body {
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem;
         align-items: flex-start;
       }
     }
@@ -35,11 +35,13 @@
     main {
       max-width: 460px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
     }
 
     figure {
       width: 100%;
-      margin-bottom: 1.75rem;
       overflow: hidden;
     }
 
@@ -52,9 +54,8 @@
     p {
       font-size: clamp(1.15rem, 2.8vw, 1.4rem);
       font-weight: 300;
-      line-height: 1.82;
+      line-height: 1.6;
       letter-spacing: 0.01em;
-      margin-bottom: 1rem;
       text-align: justify;
     }
 
