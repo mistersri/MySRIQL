@@ -1,0 +1,35 @@
+# Site
+title: Sri Vemuri
+description: Sri’s home on the internet.
+url: "https://mistersri.com"
+author:
+  name: Sri Vemuri
+  email: hey@mistersri.com
+
+# Build
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins (all whitelisted on GitHub Pages — no Actions needed)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Don't touch the rest of the site
+# Jekyll passes through any file without front matter unchanged,
+# so your existing index.html, /css, /images, favicons, etc. all keep working.
+exclude:
+  - README-BLOG.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .deepsource.toml
+
+# Apply the post layout to every post automatically.
+# This means you never have to write `layout: post` in your markdown files.
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

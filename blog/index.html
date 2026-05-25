@@ -1,0 +1,341 @@
+---
+layout: null
+title: Writing
+description: Notes, thoughts, and things worth sharing — by Sri Vemuri.
+permalink: /blog/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing — Sri Vemuri</title>
+<meta name="description" content="{{ page.description }}">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:title" content="Writing — Sri Vemuri">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}/blog/">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="{{ site.url }}/blog/">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+{% seo title=false %}
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #F4EFE6;
+  --ink: #1C1208;
+  --muted: #8a7a66;
+  --accent: #B85530;
+  --rule: rgba(28, 18, 8, 0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.4vw, 1.25rem);
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  padding: 3rem 2rem 6rem;
+  min-height: 100vh;
+}
+
+@media (max-width: 520px) {
+  body { padding: 2rem 1.5rem 4rem; }
+}
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Header link back home */
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  transition: color 0.2s;
+}
+.site-nav a:hover { color: var(--accent); }
+
+/* Page title */
+.page-title {
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 3.2rem);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-top: 0.5rem;
+}
+
+.page-lede {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Table of contents */
+.toc {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.toc-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.toc a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--rule);
+  transition: color 0.2s;
+}
+
+.toc a:last-child { border-bottom: none; }
+.toc a:hover { color: var(--accent); }
+.toc a:hover .toc-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+.toc-title {
+  font-size: 1.15rem;
+  flex: 1;
+}
+
+.toc-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Posts */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+article.post {
+  scroll-margin-top: 2rem;
+}
+
+article.post + article.post {
+  border-top: 1px solid var(--rule);
+  padding-top: 4rem;
+}
+
+.post-header { margin-bottom: 1.5rem; }
+
+.post-title {
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.3rem);
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  margin-bottom: 0.4rem;
+}
+
+.post-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.post-title a:hover { color: var(--accent); }
+
+.post-meta {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Post body (markdown-rendered content) */
+.post-content > * + * { margin-top: 1.1rem; }
+
+.post-content h2 {
+  font-weight: 500;
+  font-size: 1.55rem;
+  margin-top: 2.2rem !important;
+  letter-spacing: -0.003em;
+}
+.post-content h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 1.8rem !important;
+}
+.post-content p { line-height: 1.55; }
+.post-content a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--accent);
+  transition: color 0.2s;
+}
+.post-content a:hover { color: var(--accent); }
+
+.post-content ul, .post-content ol {
+  padding-left: 1.4rem;
+}
+.post-content li { line-height: 1.5; }
+.post-content li + li { margin-top: 0.3rem; }
+
+.post-content blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #4a3a26;
+}
+
+.post-content img,
+.post-content figure {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.6rem 0;
+}
+.post-content figure img { margin: 0; }
+.post-content figcaption {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.post-content code {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  font-size: 0.88em;
+  background: rgba(28, 18, 8, 0.06);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+.post-content pre {
+  background: rgba(28, 18, 8, 0.06);
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2rem auto;
+  width: 40%;
+}
+
+/* "Back to top" footer link */
+.back-to-top {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.back-to-top a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+.back-to-top a:hover { color: var(--accent); }
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <nav class="site-nav">
+    <a href="/">← sri vemuri</a>
+  </nav>
+
+  <header>
+    <h1 class="page-title">Writing</h1>
+    <p class="page-lede">Notes, thoughts, and things worth sharing.</p>
+  </header>
+
+  {% if site.posts.size > 0 %}
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-label">Contents</div>
+      {% for post in site.posts %}
+        <a href="#{{ post.slug }}">
+          <span class="toc-title">{{ post.title }}</span>
+          <span class="toc-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+
+    <div class="posts">
+      {% for post in site.posts %}
+        <article class="post" id="{{ post.slug }}">
+          <header class="post-header">
+            <h2 class="post-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </time>
+          </header>
+          <div class="post-content">
+            {{ post.content }}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="back-to-top">
+      <a href="#">↑ back to top</a>
+    </div>
+
+  {% else %}
+    <p class="empty">Nothing published yet. Soon.</p>
+  {% endif %}
+
+</div>
+
+</body>
+</html>
